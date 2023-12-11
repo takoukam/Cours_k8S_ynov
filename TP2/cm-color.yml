@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cm-color
+data:
+  id: "1"
+  APP_COLOR: "red"
+
+
