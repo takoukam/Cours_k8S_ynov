@@ -1,0 +1,11 @@
+
+Questions:
+
+1. Après avoir appliqué la modification pour utiliser l'image nginx en version latest dans nginx-deployment.yml, que se passe-t-il ?
+Aprés avoir fait la modification pour utiliser l'image nginx en version latest, Kubernetes a déclencher un déploiement mis à jour. Cela a entraîner la création d'un nouveau replicaset avec la nouvelle version de l'image.
+
+2. Combien de replicaset avez-vous après la modification ?
+Après la modification, j'ai deux replicasets : l'ancien replicaset avec l'image précédente et le nouveau replicaset avec la version latest de l'image.
+
+3. Quelle est l'image utilisée par le replicaset en cours d'utilisation ?
+Le replicaset en cours d'utilisation est l'image nginx en version latest
