@@ -1,10 +1,14 @@
 # Créer le namespace
-kubectl create -f namespace.yml
+kubectl apply -f namespace.yml
 
 # Créer les pods
-kubectl create -f pod-red.yml
-kubectl create -f pod-blue.yml
+kubectl apply -f pod-red.yml
+kubectl apply -f pod-blue.yml
 
 # Créer le service NodePort
-kubectl create -f service-nodeport-web.yml
+kubectl apply -f service-nodeport-web.yml
+
+# Vérifier que le service a trouvé les deux pods (champ endpoint)
+kubectl describe service -n production web-service
+
 
