@@ -1,0 +1,4 @@
+k apply -f service-nodeport-web.yml
+k apply -f pod-blue.yml
+k apply -f pod-red.yml
+k apply -f service-nodeport-web.yml
