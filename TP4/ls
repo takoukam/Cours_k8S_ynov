@@ -1,0 +1,19 @@
+# Créer le pod avec le volume persistant
+kubectl apply -f mysql-volume.yml
+
+# Créer le PersistentVolume (pv)
+kubectl apply -f pv.yml
+
+# Créer le PersistentVolumeClaim (pvc)
+kubectl apply -f pvc.yml
+
+# Vérifier que le pv et le pvc sont bien créés et prêts
+kubectl get pv
+kubectl get pvc
+
+# Créer le pod mysql utilisant le pvc
+kubectl apply -f mysql-pv.yml
+
+# Vérifier que le pod consomme bien le stockage
+kubectl describe pod mysql-pv
+
