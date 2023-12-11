@@ -1,0 +1,3 @@
+kubectl port-forward mypod 8080:8080 --address 0.0.0.0
+kubectl run mypod --image=kodekloud/webapp-color --env="APP_COLOR=red"
+kubectl create deployment nginx-deployment --image=nginx:1.21.3 --replicas=2
