@@ -1,0 +1,10 @@
+{
+  "apiVersion": "v1",
+  "kind": "ConfigMap",
+  "metadata": {
+    "name": "cm-color"
+  },
+  "data": {
+    "APP_COLOR": "red"
+  }
+}
