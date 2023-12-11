@@ -1,0 +1,5 @@
+# Exposition du pod
+kubectl port-forward webapp-color-pod 8080:8080 --address 0.0.0.0
+
+# Déploiement du deployment nginx
+kubectl apply -f nginx-deployment.yml
