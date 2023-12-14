@@ -1,0 +1,7 @@
+
+kubectl apply -f namespace.yml
+kubectl apply -f pod-red.yml
+kubectl apply -f pod-blue.yml
+kubectl apply -f service-nodeport-web.yml
+kubectl describe service -n production web-service
+
